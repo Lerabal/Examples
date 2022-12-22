@@ -18,13 +18,13 @@ void kvadrat(int n)
         int temp = i * i;
         if (i < n)
         {
-          Console.Write($"  {temp},");  
+            Console.Write($"  {temp},");
         }
         else
         {
-          Console.Write($"  {temp}.");  
+            Console.Write($"  {temp}.");
         }
-            }
+    }
 }
 int n = getUserValue("Введите n");
 kvadrat(n);
