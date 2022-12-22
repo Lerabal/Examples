@@ -11,14 +11,26 @@ int getUserValue(string message)
     int result = int.Parse(Console.ReadLine()!);
     return result;
 }
-
-int n = getUserValue("Введите n");
-
-for (int i = 1; i<n+1; i++)
+void kvadrat(int n)
 {
-    int temp = i*i;
-    Console.Write($"  {temp}");
+    for (int i = 1; i < n + 1; i++)
+    {
+        int temp = i * i;
+        if (i < n)
+        {
+          Console.Write($"  {temp},");  
+        }
+        else
+        {
+          Console.Write($"  {temp}.");  
+        }
+            }
 }
+int n = getUserValue("Введите n");
+kvadrat(n);
+
+
+
 
 
 /*int n2 = 1;
